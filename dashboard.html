@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Saya — Melek Digital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="site-nav light">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>Melek Digital</a>
+    <div class="nav-links"></div>
+    <div class="nav-cta"><a href="index.html" class="btn btn-ghost-light btn-sm">Keluar</a></div>
+  </div>
+</nav>
+
+<div class="dash-shell">
+  <aside class="dash-side">
+    <div class="dash-user">
+      <div class="av"></div>
+      <div><strong>Dewi Anggraini</strong><span>dewi@email.com</span></div>
+    </div>
+    <nav class="dash-nav">
+      <a href="dashboard.html" class="active">🏠 Kelas Saya</a>
+      <a href="katalog.html">🔎 Jelajahi Kelas</a>
+      <a href="#">🎓 Sertifikat</a>
+      <a href="#">⚙️ Pengaturan Akun</a>
+    </nav>
+  </aside>
+
+  <main class="dash-main">
+    <h1 style="font-size:26px">Halo, Dewi 👋</h1>
+    <p class="muted" style="margin-top:6px">Lanjutkan belajar dari terakhir kamu berhenti.</p>
+
+    <div class="dash-stats">
+      <div class="dash-stat"><strong>3</strong><span>Kelas dibeli</span></div>
+      <div class="dash-stat"><strong>1</strong><span>Kelas selesai</span></div>
+      <div class="dash-stat"><strong>68%</strong><span>Rata-rata progres</span></div>
+    </div>
+
+    <h2 style="font-size:18px;margin-bottom:18px">Kelas Saya</h2>
+
+    <div class="my-class-row">
+      <div class="my-class-thumb"></div>
+      <div class="my-class-info">
+        <strong>Mahir AI dari Nol</strong>
+        <div class="progress-label"><span>Modul 6 dari 8</span><span>75%</span></div>
+        <div class="progress-track"><div class="progress-fill" data-progress="75"></div></div>
+      </div>
+      <a href="detail-kelas.html?id=mahir-ai-dasar" class="btn btn-primary btn-sm">Lanjutkan</a>
+    </div>
+
+    <div class="my-class-row">
+      <div class="my-class-thumb"></div>
+      <div class="my-class-info">
+        <strong>ChatGPT untuk Kerja Sehari-hari</strong>
+        <div class="progress-label"><span>Modul 2 dari 6</span><span>30%</span></div>
+        <div class="progress-track"><div class="progress-fill" data-progress="30"></div></div>
+      </div>
+      <a href="detail-kelas.html?id=chatgpt-produktif" class="btn btn-primary btn-sm">Lanjutkan</a>
+    </div>
+
+    <div class="my-class-row">
+      <div class="my-class-thumb"></div>
+      <div class="my-class-info">
+        <strong>Etika & Keamanan Menggunakan AI</strong>
+        <div class="progress-label"><span>Selesai <span class="cert-badge">✓ Sertifikat siap</span></span><span>100%</span></div>
+        <div class="progress-track"><div class="progress-fill" data-progress="100"></div></div>
+      </div>
+      <a href="#" class="btn btn-ghost-light btn-sm">Unduh Sertifikat</a>
+    </div>
+
+    <div style="margin-top:40px;text-align:center;padding:40px;border:1.5px dashed var(--line-dark);border-radius:var(--radius-m)">
+      <p class="muted">Mau lanjut ke topik AI lain?</p>
+      <a href="katalog.html" class="btn btn-ghost-light" style="margin-top:14px">Jelajahi Kelas Lainnya</a>
+    </div>
+  </main>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

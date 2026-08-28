@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semua Kelas — Melek Digital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Lompat ke konten utama</a>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>Melek Digital</a>
+    <div class="nav-links">
+      <a href="index.html">Beranda</a>
+      <a href="katalog.html" class="active">Kelas</a>
+      <a href="index.html#tentang">Kenapa Kami</a>
+      <a href="index.html#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="login.html" class="btn btn-ghost-dark btn-sm">Masuk</a>
+      <a href="register.html" class="btn btn-primary btn-sm">Daftar</a>
+    </div>
+    <button class="nav-toggle" aria-label="Buka menu">☰</button>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="catalog-head">
+    <div class="wrap">
+      <span class="eyebrow">Katalog Kelas</span>
+      <h1 style="color:#fff;font-size:clamp(28px,4vw,44px);margin-top:14px">Semua Kelas Mahir AI</h1>
+      <p style="color:rgba(255,255,255,0.7);margin-top:12px;max-width:520px">Pilih kelas sesuai kebutuhanmu — dari dasar sampai otomatisasi kerja pakai AI.</p>
+      <div class="search-bar">
+        <input type="search" id="search-input" placeholder="Cari kelas, misal: ChatGPT, gambar AI..." aria-label="Cari kelas">
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="catalog-toolbar">
+        <div class="filter-row" role="group" aria-label="Filter kategori">
+          <button class="pill active" data-cat="Semua">Semua Kategori</button>
+          <button class="pill" data-cat="Dasar AI">Dasar AI</button>
+          <button class="pill" data-cat="Produktivitas">Produktivitas</button>
+          <button class="pill" data-cat="Skill Inti">Skill Inti</button>
+          <button class="pill" data-cat="Konten & Media">Konten & Media</button>
+          <button class="pill" data-cat="Kreatif">Kreatif</button>
+          <button class="pill" data-cat="Bisnis">Bisnis</button>
+        </div>
+        <div class="sort-select">
+          <select id="sort-select" aria-label="Urutkan">
+            <option value="populer">Terpopuler</option>
+            <option value="termurah">Harga Termurah</option>
+            <option value="termahal">Harga Tertinggi</option>
+            <option value="terbaru">Terbaru</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter level" style="margin-bottom:8px">
+        <button class="pill active" data-level="Semua">Semua Level</button>
+        <button class="pill" data-level="Pemula">Pemula</button>
+        <button class="pill" data-level="Menengah">Menengah</button>
+      </div>
+      <p class="results-count" id="results-count"></p>
+
+      <div class="class-grid" id="catalog-grid"></div>
+
+      <div class="empty-state" id="empty-state" style="display:none">
+        <div class="glyph">◐</div>
+        <h3 style="font-size:19px">Kelas tidak ditemukan</h3>
+        <p style="margin-top:8px">Coba kata kunci lain atau ubah filter kategori/level.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Melek Digital</div>
+        <p style="font-size:14px;max-width:280px">Membantu orang Indonesia jadi percaya diri memakai AI, satu kelas praktis pada satu waktu.</p>
+      </div>
+      <div>
+        <h4>Kelas</h4>
+        <ul><li><a href="katalog.html">Semua Kelas</a></li></ul>
+      </div>
+      <div>
+        <h4>Perusahaan</h4>
+        <ul><li><a href="index.html#tentang">Tentang Kami</a></li><li><a href="index.html#faq">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h4>Akun</h4>
+        <ul><li><a href="login.html">Masuk</a></li><li><a href="register.html">Daftar</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Melek Digital. Semua hak dilindungi.</span>
+      <div class="social-row"><a href="#">IG</a><a href="#">YT</a><a href="#">TT</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

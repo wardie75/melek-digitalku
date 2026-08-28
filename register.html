@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daftar — Melek Digital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="auth-page">
+  <div class="auth-visual">
+    <div class="dawn-visual" aria-hidden="true"><div class="eye-line"></div></div>
+    <blockquote>"Dua minggu lalu saya masih takut buka ChatGPT. Sekarang saya pakai AI tiap hari buat kerja."
+      <cite>— Budi Santoso, murid Melek Digital</cite>
+    </blockquote>
+  </div>
+  <div class="auth-form-wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>Melek Digital</a>
+    <h1 style="font-size:26px">Buat akun baru</h1>
+    <p class="muted" style="margin-top:8px">Gratis daftar, bayar hanya saat beli kelas.</p>
+
+    <form style="margin-top:28px" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+      <div class="field">
+        <label for="reg-name">Nama Lengkap</label>
+        <input type="text" id="reg-name" required placeholder="Nama kamu">
+      </div>
+      <div class="field">
+        <label for="reg-email">Email</label>
+        <input type="email" id="reg-email" required placeholder="kamu@email.com">
+      </div>
+      <div class="field">
+        <label for="reg-pass">Buat Kata Sandi</label>
+        <input type="password" id="reg-pass" required placeholder="Minimal 8 karakter">
+        <span class="field-hint">Gunakan kombinasi huruf dan angka.</span>
+      </div>
+      <label style="display:flex;align-items:flex-start;gap:8px;font-size:13px;color:var(--ink-soft);margin-bottom:22px">
+        <input type="checkbox" required style="accent-color:var(--coral);margin-top:3px">
+        Saya setuju dengan <a href="#" style="color:var(--coral)">Syarat & Ketentuan</a> Melek Digital.
+      </label>
+      <button type="submit" class="btn btn-primary btn-block">Daftar Sekarang</button>
+    </form>
+
+    <div class="auth-divider">atau</div>
+    <button class="btn btn-ghost-light btn-block" type="button">Daftar dengan Google</button>
+
+    <p class="auth-switch">Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+  </div>
+</div>
+</body>
+</html>

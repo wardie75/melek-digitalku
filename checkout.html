@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Melek Digital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="site-nav light">
+  <div class="wrap">
+    <a href="index.html" class="brand"><span class="dot"></span>Melek Digital</a>
+    <div class="nav-links"></div>
+    <div class="nav-cta"><span class="muted" style="font-size:13.5px">🔒 Pembayaran aman</span></div>
+  </div>
+</nav>
+
+<main>
+  <section style="padding-top:56px">
+    <div class="wrap">
+      <div class="checkout-steps">
+        <div class="step active"><span class="n">1</span> Ringkasan</div>
+        <div class="sep"></div>
+        <div class="step active"><span class="n">2</span> Pembayaran</div>
+        <div class="sep"></div>
+        <div class="step"><span class="n">3</span> Selesai</div>
+      </div>
+
+      <div class="checkout-grid" id="checkout-summary">
+        <div id="checkout-form-wrap">
+          <h1 style="font-size:26px">Checkout</h1>
+
+          <div class="card" style="margin-top:24px">
+            <h3 style="font-size:16px;margin-bottom:16px">Data Pembeli</h3>
+            <form id="checkout-form">
+              <div class="field">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" required placeholder="Nama sesuai identitas">
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required placeholder="kamu@email.com">
+                </div>
+                <div class="field">
+                  <label for="phone">No. WhatsApp</label>
+                  <input type="tel" id="phone" required placeholder="08xxxxxxxxxx">
+                </div>
+              </div>
+
+              <h3 style="font-size:16px;margin:24px 0 16px">Metode Pembayaran</h3>
+              <div class="pay-methods" role="radiogroup" aria-label="Metode pembayaran">
+                <label class="pay-method selected"><input type="radio" name="pay" checked> Transfer Bank</label>
+                <label class="pay-method"><input type="radio" name="pay"> QRIS</label>
+                <label class="pay-method"><input type="radio" name="pay"> GoPay / OVO</label>
+                <label class="pay-method"><input type="radio" name="pay"> Kartu Debit/Kredit</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="pay-btn" style="margin-top:28px">Bayar Sekarang</button>
+              <p style="text-align:center;font-size:12.5px;color:var(--muted);margin-top:12px">Dengan membayar, kamu menyetujui Syarat & Ketentuan kami.</p>
+            </form>
+          </div>
+        </div>
+
+        <div id="checkout-success" class="card" style="display:none;text-align:center;padding:60px 30px">
+          <div style="font-size:44px;color:var(--success)">✓</div>
+          <h2 style="font-size:22px;margin-top:16px">Pembayaran Berhasil!</h2>
+          <p style="margin-top:10px;color:var(--ink-soft)">Kelas sudah tersedia di dashboard kamu. Selamat belajar!</p>
+          <a href="dashboard.html" class="btn btn-primary" style="margin-top:24px">Buka Dashboard Saya</a>
+        </div>
+
+        <aside class="card" style="position:sticky;top:96px">
+          <h3 style="font-size:16px;margin-bottom:16px">Ringkasan Pesanan</h3>
+          <div style="display:flex;gap:14px;align-items:center">
+            <div class="my-class-thumb"></div>
+            <div>
+              <strong id="co-title" style="font-size:14.5px">Memuat...</strong>
+              <p class="muted" id="co-level" style="font-size:12.5px;margin-top:4px"></p>
+            </div>
+          </div>
+
+          <div style="margin-top:20px">
+            <div class="voucher-row">
+              <input type="text" id="voucher-input" placeholder="Kode voucher">
+              <button type="button" class="btn btn-ghost-light btn-sm" id="voucher-btn">Pakai</button>
+            </div>
+            <p id="voucher-msg" style="font-size:12.5px;margin-top:-8px;margin-bottom:14px"></p>
+          </div>
+
+          <div class="order-line"><span>Harga Kelas</span><span id="co-subtotal">Rp0</span></div>
+          <div class="order-line" id="co-discount-row" style="display:none"><span>Diskon Voucher</span><span id="co-discount">-Rp0</span></div>
+          <div class="order-line total"><span>Total</span><span id="co-total">Rp0</span></div>
+          <p class="field-hint" style="margin-top:8px">Coba kode <strong>MELEK10</strong> untuk diskon 10%.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Melek Digital. Semua hak dilindungi.</span>
+      <div class="social-row"><a href="#">IG</a><a href="#">YT</a><a href="#">TT</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
